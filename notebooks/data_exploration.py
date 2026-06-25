@@ -60,7 +60,7 @@ print("\n" + "=" * 80)
 print("REVIEW LENGTH ANALYSIS")
 print("=" * 80)
 
-review_lengths = df["review"].str.len()
+review_character_lengths = df["review"].str.len()
 print(review_lengths.describe())
 
 print("\n" + "=" * 80)
