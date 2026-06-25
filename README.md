@@ -170,13 +170,14 @@ Confidence: 97.42%
 
 ### Positive Review
 
-![Positive Prediction](screenshots/positive_prediction.png)
+![Positive Prediction](<img width="1464" height="130" alt="positive-review" src="https://github.com/user-attachments/assets/85b5f4e8-a23c-4b2c-b233-3b1d3c242010" />
+)
 
 ---
 
 ### Negative Review
 
-![Negative Prediction](screenshots/negative_prediction.png)
+![Negative Prediction](<img width="1472" height="170" alt="negative-review" src="https://github.com/user-attachments/assets/8f11cf5f-aec0-44c6-a95f-2f2a56f91050" />)
 
 ---
 
