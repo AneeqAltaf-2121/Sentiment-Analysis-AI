@@ -52,6 +52,8 @@ Sentiment-Analysis-AI/
 - NumPy
 - NLTK
 - Scikit-Learn
+- FastAPI
+- Uvicorn
 - TF-IDF Vectorization
 - Logistic Regression
 - Multinomial Naive Bayes
@@ -216,10 +218,46 @@ The best-performing model is automatically selected and saved for prediction.
 
 ---
 
+
+## FastAPI API
+
+Run the API server:
+
+```bash
+uvicorn api:app --reload
+```
+
+Once the server is running, open the interactive API documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+The Swagger UI allows you to test the sentiment prediction endpoint directly from your browser.
+
+Example request:
+
+```json
+{
+  "review": "This movie was absolutely fantastic. The acting was brilliant, the story was engaging, and I enjoyed every minute of it. I would definitely recommend it to others."
+}
+```
+
+Example response:
+
+```json
+{
+  "success": true,
+  "sentiment": "Positive",
+  "confidence": 0.9892861642774675
+}
+```
+
+
 ## Future Improvements
 
 - Streamlit web interface
-- REST API using FastAPI
+
 - Transformer-based sentiment analysis (BERT)
 - Docker deployment
 - Cloud deployment (Render / Railway / Azure)
