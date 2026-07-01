@@ -1,6 +1,6 @@
 # Sentiment Analysis AI
 
-Sentiment Analysis AI is a Natural Language Processing (NLP) project built with Python, Pandas, NLTK, and Scikit-Learn. The system classifies movie reviews as **Positive** or **Negative** by combining text preprocessing, TF-IDF feature extraction, and machine learning models trained on the IMDb movie reviews dataset.
+Sentiment Analysis AI is a Natural Language Processing (NLP) project built with Python, Pandas, NLTK, Scikit-Learn, and FastAPI. The system classifies movie reviews as **Positive** or **Negative** by combining text preprocessing, TF-IDF feature extraction, and machine learning models trained on the IMDb movie reviews dataset.
 
 ---
 
@@ -15,6 +15,7 @@ Sentiment Analysis AI is a Natural Language Processing (NLP) project built with 
 - Compares Logistic Regression and Multinomial Naive Bayes
 - Automatically selects and saves the best-performing model
 - Command-line interface for real-time sentiment prediction
+- FastAPI REST API for real-time sentiment prediction
 - Modular project structure for future web or GUI deployment
 
 ---
@@ -36,6 +37,7 @@ Sentiment-Analysis-AI/
 │   ├── train_model.py
 │   └── model_comparison.py
 │
+├── api.py
 ├── sentiment_model.py
 ├── app.py
 ├── requirements.txt
@@ -52,11 +54,11 @@ Sentiment-Analysis-AI/
 - NumPy
 - NLTK
 - Scikit-Learn
-- FastAPI
-- Uvicorn
 - TF-IDF Vectorization
 - Logistic Regression
 - Multinomial Naive Bayes
+- FastAPI
+- Uvicorn
 - Joblib
 - Git
 - GitHub
@@ -66,6 +68,10 @@ Sentiment-Analysis-AI/
 ## Dataset
 
 This project uses the **IMDb Movie Reviews Dataset**, containing **50,000** labeled movie reviews evenly divided between positive and negative sentiments.
+
+**Dataset Source:**
+
+https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
 Dataset includes:
 
@@ -104,7 +110,8 @@ Model Comparison
 Best Model Selection
       │
       ▼
-Real-Time Sentiment Prediction
+Real-Time Prediction
+(CLI & FastAPI)
 ```
 
 ---
@@ -215,11 +222,13 @@ The best-performing model is automatically selected and saved for prediction.
 - Scikit-Learn
 - NLTK
 - Git & GitHub
+- FastAPI
+- REST API Development
 
 ---
 
 
-## FastAPI API
+## FastAPI REST API
 
 Run the API server:
 
@@ -253,12 +262,12 @@ Example response:
 }
 ```
 
+---
 
 ## Future Improvements
 
 - Streamlit web interface
-
-- Transformer-based sentiment analysis (BERT)
+- Transformer-based sentiment analysis using BERT
 - Docker deployment
 - Cloud deployment (Render / Railway / Azure)
 
@@ -268,5 +277,4 @@ Example response:
 
 **Aneeq Altaf**
 
-GitHub:
-https://github.com/AneeqAltaf-2121
+GitHub Profile: https://github.com/AneeqAltaf-2121
